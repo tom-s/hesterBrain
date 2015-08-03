@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './card.jsx'
+import CardsList from './cardsList.jsx'
 
 var cards  = [
     {
@@ -29,6 +30,10 @@ export default class Home extends React.Component {
                 <h1> Hello {this.props.name}! </h1>
                 <div className="card-container">
                     <Card title={todayCard.title} steps={todayCard.steps}/>
+                </div>
+
+                <div className="cardsList-container">
+                    <CardsList cards={cards} />
                 </div>
             </div>
         );

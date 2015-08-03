@@ -29,7 +29,6 @@ export default class Card extends React.Component {
     }
 
     clickStep(currentStep) {
-        console.log("clicked on step", currentStep);
         var nextStep = (currentStep === (this.props.steps.length - 1)) ? nextStep = 0 : currentStep + 1;
         this.setState({
             currentStateIndex: nextStep
